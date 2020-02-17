@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
+    title: `LISTEN MOVE LOVE`,
     description: ``,
-    author: ``,
+    author: `by JORINDE ZIEGERT`,
     twitter: ``,
-    instagram: ``,
+    instagram: `https://www.instagram.com/jorindeziegert/`,
     facebook: ``,
     youtube: ``,
-    apple: ``,
-    google: ``,
-    pocket: ``,
-    spotify: ``,
-    overcast: ``,
-    castbox: ``,
-    castro: `https://castro.fm/itunes/`,
+    apple: `https://podcasts.apple.com/podcast/id1475067053?ct=podlink&mt=2`,
+    google: `https://podcasts.google.com/?feed=aHR0cHM6Ly9saXN0ZW5tb3ZlbG92ZS5saWJzeW4uY29tL3Jzcw==`,
+    pocket: `https://pca.st/itunes/1475067053`,
+    spotify: `https://open.spotify.com/show/4vmFsZ06GuaG60OKOSsZ2p`,
+    overcast: `https://overcast.fm/itunes1475067053`,
+    castbox: `https://castbox.fm/vic/1475067053`,
+    castro: `https://castro.fm/itunes/1475067053`,
     podbean: ``,
-    beaker: ``,
+    beaker: `https://www.breaker.audio/shows?feed_url=https%3A%2F%2Flistenmovelove.libsyn.com%2Frss`,
     stitcher: ``
   },
   plugins: [
@@ -52,7 +52,7 @@ module.exports = {
         // url: `https://www.gatsbyjs.org/blog/rss.xml`,
         // url: `https://boysinthecave.com/feed/podcast/`,
         // url: `http://boysinthecave.libsyn.com/rss`,
-        url: `http://feeds.soundcloud.com/users/soundcloud:users:407560764/sounds.rss`,
+        url: `https://listenmovelove.libsyn.com/rss`,
         name: `GatsbyBlog`,
         // Optional
         // Read parser document: https://github.com/bobby-brennan/rss-parser#readme

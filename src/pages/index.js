@@ -28,11 +28,11 @@ const IndexPage = ({ data }) => {
         {/* ###############################    HEADER START ########################################### */}
         <div className={`${albumStyle.slope} bg-gray-200`} />
         <div
-          className=" max-w-lg md:max-w-2xl pl-12 pt-16 pr-12 md:flex md:justify-end 
+          className=" max-w-lg md:max-w-2xl pl-8 pt-16 pr-8 md:flex md:justify-end 
           md:flex-row-reverse m-auto md:pl-4 md:pr-4 lg:max-w-3xl xl:max-w-5xl  xl:m-auto relative mdx:pt-24 lgx:max-w-960 lgx:px-12  xl-mx-0"
         >
           <div className="md:ml-8 md:mt-3 lg:ml-12">
-            <div className="text-4xl font-medium md:text-3xl md:font-bold text-gray-900 lg:text-4xl">
+            <div className="text-3xl font-medium md:text-3xl md:font-bold text-gray-900 lgx:text-4xl">
               {data.site.siteMetadata.title}
             </div>
             <div className="text-base mt-3 md:text-base text-gray-900">
@@ -142,15 +142,27 @@ const IndexPage = ({ data }) => {
            md:text-xl"
           />
           <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Hey, meet Bilal, Kwaku, Patrick &amp; Tom. 4 Black &amp; Mixed-Race
-            guys who became friends whilst studying at Cambridge University.
-            Join us as we talk about life before, during and well - after 'The
-            Bridge'. Expect chats about life, and our own experiences
+            There is so much more to discover — places around the world, the
+            beauty of being alive and parts of ourselves that we have perhaps
+            not yet been aware of. I am currently working as a flight attendant
+            based out of Germany and I have created this podcast to invite you
+            to be a part of my personal journey. This is a journey that flies me
+            to incredible places around the world, and one that brings me closer
+            to myself, as I go through many situations that challenge me to look
+            within. And this might be the most beautiful journey of all — To
+            discover the greatness that lies within each one of us.
           </div>
           <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Cast:
-            <br /> Kwaku: @KwakuDapaah_ <br /> Patrick: @CariocoLondrino <br />{" "}
-            Bilal: @Tweetsbybilal <br /> Tom: @TomTheEconomist
+            Since starting this job, my daily routines have changed from having
+            a regular schedule in one place to walking through soukes in Kuwait,
+            traveling through the biggest slum in Kenya and zip lining in the
+            Andes Mountains in Columbia. The biggest change for me was and still
+            is, to constantly adapt to the changing time zones, new impressions,
+            languages, temperatures and homes, while always talking, interacting
+            and working through the day or night with new people from all over
+            the world. All this is pushing me to new limits that make me change
+            my perspectives and inspire me to consciously look closer at what it
+            does within me. Lets discover the beauty of life together.
           </div>
           <ul className={`flex justify-center mt-12 md:mt-16 text-gray-900`}>
             {data.site.siteMetadata.facebook !== "" ? (
@@ -198,7 +210,7 @@ const IndexPage = ({ data }) => {
             )}
 
             {data.site.siteMetadata.instagram !== "" ? (
-              <li className="ml-10">
+              <li className="">
                 <a href={data.site.siteMetadata.instagram}>
                   <svg
                     width="24"
@@ -281,7 +293,9 @@ const IndexPage = ({ data }) => {
           <div className="flex justify-center mt-16 lgx:max-w-960 lgx:mx-12">
             <button
               onClick={() => setCount(count + 5)}
-              className={`{albumStyles.footer} text-white font-bold py-3 px-8 rounded`}
+              className={` ${
+                albumStyle.footer
+              } text-white font-medium py-3 px-8 rounded`}
             >
               <span>Load More</span>
             </button>
@@ -301,7 +315,9 @@ export const query = graphql`
           title
           pubDate
           id
-          content
+          content {
+            encoded
+          }
           itunes {
             duration
             summary
